@@ -1,13 +1,9 @@
 # Campus-shops
 
-#### 部署
+# 项目数据库获取方式
 
-1、将数据库导入MySQL，数据库名字为：shop；(默认数据库账号：root，密码：123456，如需修改请修改application-prod.yml文件)
-2、将数据文件夹内的文件拷贝到：D:\campusshops\file 目录下
-3、修改com.util.SmsUtil.java文件中的关于阿里云短信验证码的配置
-4、运行项目
-
-
+关注公众号：理木客，后台回复：shop，即可。
+项目的数据文件请加QQ群：994793967获取
 
 #### 介绍
 毕设：基于Springboot的校园二手交易商城的设计与实现
