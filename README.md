@@ -1,10 +1,11 @@
 # Campus-shops
 
-# 项目数据库获取方式
+# 导语
 
-### 关注公众号：理木客，后台回复：shop
+### 项目数据库获取方式关注公众号：理木客，后台回复：shop
 ### 项目的数据文件请加QQ群：994793967  获取
 ### 如需更多项目资源和学习资源，请加入此群：671408308
+### 项目演示视频：[Springboot + Vue.js 的校园二手交易商城](http://https://www.bilibili.com/video/BV16X4y1V7ay/)
 
 #### 介绍
 毕设：基于Springboot的校园二手交易商城的设计与实现
@@ -78,6 +79,17 @@ Springboot+vue+MySQL
   1. 评论回复、商品审核、私信发送通知
   2. 设置为管理员或用户发送通知
 
+项目运行部分截图
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194814_2623563f_3026905.png "2.png")
 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194821_f087f110_3026905.png "1.png")
 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194828_69712d71_3026905.png "3.png")
 
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194835_79a297cc_3026905.png "4.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194846_93df0532_3026905.png "5.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194854_76b40a30_3026905.png "6.png")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0310/194900_85221dbe_3026905.png "7.png")
