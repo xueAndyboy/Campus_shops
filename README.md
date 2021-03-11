@@ -54,7 +54,8 @@ Springboot+vue+MySQL
   3. 用户删除售出记录
 
   #### 聊天模块
-
+  1.可以进行在线聊天
+  
   #### 公告模块
   1. 发布公告
   2. 默认展示最新发布的前三条公告
@@ -78,3 +79,23 @@ Springboot+vue+MySQL
   #### 通知模块
   1. 评论回复、商品审核、私信发送通知
   2. 设置为管理员或用户发送通知
+  
+  #### 支付模块
+  1. 提供支付宝沙箱支付，发货，确认收货等操作（此功能暂未开源，若需要请进群联系）
+
+
+  #### 部分图片
+  1.商品首页
+![image](https://user-images.githubusercontent.com/46672076/110750258-2c425680-827d-11eb-866f-395e779aa527.png)
+  
+  2.商品详情
+![image](https://user-images.githubusercontent.com/46672076/110750317-42e8ad80-827d-11eb-8999-32f8b9f4be70.png)
+  
+  3.个人中心
+![image](https://user-images.githubusercontent.com/46672076/110750402-614ea900-827d-11eb-8ec0-230600cd73b3.png)
+  
+  4.在线聊天
+![image](https://user-images.githubusercontent.com/46672076/110750750-e8038600-827d-11eb-91ed-2491d22251c0.png)
+
+
+
