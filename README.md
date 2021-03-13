@@ -7,7 +7,7 @@
 ### 如需更多项目资源和学习资源，请加入此群：671408308
 ### 项目演示视频：[Springboot + Vue.js 的校园二手交易商城](https://www.bilibili.com/video/BV16X4y1V7ay/)
 ### 短信验证码及支付接口申请演示视频：[如何申请短信验证码接口和支付宝支付接口](https://www.bilibili.com/video/BV1Wh411Q76C/)
-
+### 项目部署视频：请关注公众号 理木客 获取
 #### 介绍
 毕设：基于Springboot的校园二手交易商城的设计与实现
 
