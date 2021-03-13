@@ -12,7 +12,7 @@
 毕设：基于Springboot的校园二手交易商城的设计与实现
 
 #### 软件架构
-Springboot+vue+MySQL
+- Springboot+vue+MySQL
 
 #### 部署系统必备
 - JDK（1.8版本,并配置系统环境变量）
@@ -20,6 +20,7 @@ Springboot+vue+MySQL
 - Navicat for MySQL（可视化）
 - Maven（换阿里源，管理Jar包）
 - Lombok插件（简化实体类）
+- 本项目采用IDEA开发，以上工具类及安装教程可在QQ群中获取
 #### 可选项
 - 阿里SMS（个人目前无法申请签名）
 - 支付宝沙箱（可以申请）
