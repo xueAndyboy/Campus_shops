@@ -2,10 +2,10 @@
 
 # 导语
 
-### 项目数据库获取方式关注公众号：理木客，后台回复：shop
+### 项目数据库和部署视频，获取方式关注公众号：理木客，后台回复：shop 
 ### 项目的数据文件请加QQ群：994793967  获取
 ### 如需更多项目资源和学习资源，请加入此群：671408308
-### 项目演示视频：[Springboot + Vue.js 的校园二手交易商城](http://https://www.bilibili.com/video/BV16X4y1V7ay/)
+### 项目演示视频：[Springboot + Vue.js 的校园二手交易商城](https://www.bilibili.com/video/BV16X4y1V7ay/)
 
 #### 介绍
 毕设：基于Springboot的校园二手交易商城的设计与实现
