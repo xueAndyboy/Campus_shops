@@ -180,6 +180,23 @@ public class CommodityController {
     }
 
     /**
+     * 根据商品id（commid）判断收藏商品是否存在
+     * */
+    @GetMapping("/product-detail-isnull/{commid}")
+    @ResponseBody
+    public ResultVo product_detail_isnull(@PathVariable("commid") String commid) {
+        Commodity commodity = commodityService.LookCommodity(new Commodity().setCommid(commid));
+        System.out.println(commodity);
+        if (commodity.getCommstatus().equals(1) && commodity != null) {//如果商品正常
+            System.out.println("商品正常");
+            return new ResultVo(true,StatusCode.OK,"查询成功");
+        }else {
+            System.out.println("商品不正常");
+            return new ResultVo(true,StatusCode.ERROR,"您收藏的商品已经不存在，建议您取消收藏");
+        }
+    }
+
+    /**
      * 商品详情
      * 根据商品id（commid）查询商品信息、用户昵称及头像
      * 用户可以查看正常的商品

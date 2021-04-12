@@ -33,16 +33,38 @@ layui.use(['form', 'element', 'util', 'carousel', 'laypage', 'layer','table'], f
     table.on('tool(test)', function (obj) {
         var data = obj.data;
         if (obj.event === 'xiangqing') {
-            window.open(basePath+"/product-detail/"+data.commid)
-        }else if (obj.event === 'bianji') {
-            layer.open({
-                type: 2,
-                title: '修改商品',
-                shadeClose: true,
-                shade: 0.8,
-                maxmin: true,
-                area: ['80%', '80%'],
-                content: basePath+'/user/editgoods/'+data.commid
+            $.ajax({
+                url: basePath+'/product-detail-isnull/'+data.commid,
+                data: "",
+                contentType: "application/json;charset=UTF-8", //发送数据的格式
+                type: "get",
+                dataType: "json", //回调
+                beforeSend: function () {
+                    layer.load(1, { //icon支持传入0-2
+                        content: '请稍等...',
+                        success: function (layero) {
+                            layero.find('.layui-layer-content').css({
+                                'padding-top': '39px',
+                                'width': '60px'
+                            });
+                        }
+                    });
+                },
+                complete: function () {
+                    layer.closeAll('loading');
+                },
+                success: function (shuju) {
+                    console.log(shuju)
+                    if(shuju.status===200){
+                        window.open(basePath+"/product-detail/"+data.commid)
+                    }else {
+                        layer.msg(shuju.message, {
+                            time: 1000,
+                            icon: 2,
+                            offset: '50px'
+                        });
+                    }
+                }
             });
         }else if(obj.event === 'quxiaoshoucang'){
             layer.confirm('确认取消收藏该商品吗？', {
@@ -56,54 +78,6 @@ layui.use(['form', 'element', 'util', 'carousel', 'laypage', 'layer','table'], f
                     data: "",
                     contentType: "application/json;charset=UTF-8", //发送数据的格式
                     type: "put",
-                    dataType: "json", //回调
-                    beforeSend: function () {
-                        layer.load(1, { //icon支持传入0-2
-                            content: '请稍等...',
-                            success: function (layero) {
-                                layero.find('.layui-layer-content').css({
-                                    'padding-top': '39px',
-                                    'width': '60px'
-                                });
-                            }
-                        });
-                    },
-                    complete: function () {
-                        layer.closeAll('loading');
-                    },
-                    success: function (data) {
-                        console.log(data)
-                        if(data.status===200){
-                            layer.msg(data.message, {
-                                time: 1000,
-                                icon: 1,
-                                offset: '50px'
-                            }, function () {
-                                location.reload();
-                            });
-                        }else {
-                            layer.msg(data.message, {
-                                time: 1000,
-                                icon: 2,
-                                offset: '50px'
-                            });
-                        }
-                    }
-                });
-            }, function(){
-            });
-        }else if (obj.event === 'yishou') {
-            layer.confirm('确认设置该商品为已售吗？', {
-                btn: ['确定','算了'], //按钮
-                title:"售出商品",
-                offset:"50px"
-            }, function(){
-                layer.closeAll();
-                $.ajax({
-                    url: basePath+'/user/changecommstatus/'+data.commid+"/4",
-                    data: "",
-                    contentType: "application/json;charset=UTF-8", //发送数据的格式
-                    type: "get",
                     dataType: "json", //回调
                     beforeSend: function () {
                         layer.load(1, { //icon支持传入0-2
