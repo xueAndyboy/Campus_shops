@@ -12,11 +12,13 @@
 ![](https://images.gitee.com/uploads/images/2021/0330/182017_93054a81_3026905.jpeg "2.jpg")
 ![](https://images.gitee.com/uploads/images/2021/0330/182024_a36815c2_3026905.jpeg "3.jpg")
 
+
 ### 项目演示视频：[Springboot + Vue.js 的校园二手交易商城](https://www.bilibili.com/video/BV16X4y1V7ay/)
 ### 短信验证码及支付接口申请演示视频：[如何申请短信验证码接口和支付宝支付接口](https://www.bilibili.com/video/BV1Wh411Q76C/)
 ### 项目部署视频：请关注公众号 理木客 获取
 #### 介绍
-毕设：基于Springboot的校园二手交易商城的设计与实现
+基于Springboot的校园二手交易商城的设计与实现
+注意：此项目已经发布两年，估计很多人都是用此项目当作自己的毕业设计项目。在此声明，此项目不建议当毕设项目，出问题自己负责。
 
 #### 软件架构
 - Springboot+vue+MySQL
